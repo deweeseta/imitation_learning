@@ -124,11 +124,11 @@ Here is a diagram from Nvidia that describes the training and *data augmentation
 We will train our models in Jupyter Notebook:
 
 ```sh
-$ conda activate imitation_learning
+$ conda activate imitation_learning_sim
 $ cd imitation_learning
 $ jupyter notebook
 ```
-Then open train_pilotnet.ipynb in your browser.
+Then open *train_pilotnet.ipynb* in your browser.
 
 ### Collect Training Data
 First, create a new folder to store training data from the simulator.
@@ -139,7 +139,7 @@ Once you have configured a folder to record your training data into, press **rec
 
 The simulator will save three camera views from the car (left, center, and right) as jpegs, along with a csv file named *driving_log.csv* containing the image filenames, steering angles, and speed.
 
-In the *IMG* folder you will the .jpg files with the following naming scheme corresponding to the above csv:
+In the *IMG* folder you will find the .jpg files with the following naming scheme corresponding to the above csv:
 
 |Left|Center|Right|
 |:--------:|:--------:|:--------:|
