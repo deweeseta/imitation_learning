@@ -101,8 +101,12 @@ if __name__ == '__main__':
         help='Path to image folder. This is where the images from the run will be saved.'
     )
     args = parser.parse_args()
-
-    model = load_model(args.model)
+    
+    try:
+        model = load_model(args.model)
+    except:
+        from keras.models import load_model
+        model = load_model(args.model)
 
     if args.image_folder != '':
         print("Creating image folder at {}".format(args.image_folder))
